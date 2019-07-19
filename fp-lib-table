@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name footprints0)(type KiCad)(uri /home/acceleration/Downloads/ultra_librarian/UL_ECA1HHG222/KiCAD/2019-06-30_05-38-27/footprints.pretty)(options "")(descr ""))
+  (lib (name footprints1)(type KiCad)(uri /home/acceleration/Downloads/ultra_librarian/UL_ECA1HHG470/KiCAD/2019-06-30_05-39-15/footprints.pretty)(options "")(descr ""))
+  (lib (name footprints2)(type KiCad)(uri /home/acceleration/Downloads/ultra_librarian/UL_SQP10AJB16R/KiCAD/2019-06-30_05-40-58/footprints.pretty)(options "")(descr ""))
+  (lib (name SJ1-3523NG)(type Legacy)(uri /home/acceleration/Downloads/ultra_librarian/SJ1-3523NG.mod)(options "")(descr ""))
+  (lib (name PJ-037A)(type Legacy)(uri /home/acceleration/Downloads/ultra_librarian/PJ-037A.mod)(options "")(descr ""))
+)
