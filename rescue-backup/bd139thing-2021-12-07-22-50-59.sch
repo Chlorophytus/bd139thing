@@ -1,0 +1,518 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bd139thing-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NPN_EBC Q1
+U 1 1 5D184454
+P 2700 3950
+F 0 "Q1" H 2900 4000 50  0000 L CNN
+F 1 "PN2222" H 2900 3900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2900 4050 50  0001 C CNN
+F 3 "" H 2700 3950 50  0001 C CNN
+	1    2700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q2
+U 1 1 5D184493
+P 3300 3500
+F 0 "Q2" H 3500 3550 50  0000 L CNN
+F 1 "BD13916" H 3500 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 3500 3600 50  0001 C CNN
+F 3 "" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5D184518
+P 3400 4950
+F 0 "#PWR01" H 3400 4700 50  0001 C CNN
+F 1 "GND" H 3400 4800 50  0000 C CNN
+F 2 "" H 3400 4950 50  0001 C CNN
+F 3 "" H 3400 4950 50  0001 C CNN
+	1    3400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 5D18453B
+P 3400 2250
+F 0 "#PWR02" H 3400 2100 50  0001 C CNN
+F 1 "+12V" H 3400 2390 50  0000 C CNN
+F 2 "" H 3400 2250 50  0001 C CNN
+F 3 "" H 3400 2250 50  0001 C CNN
+	1    3400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5D184740
+P 3000 3350
+F 0 "R4" V 3080 3350 50  0000 C CNN
+F 1 "330" V 3000 3350 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 2930 3350 50  0001 C CNN
+F 3 "" H 3000 3350 50  0001 C CNN
+	1    3000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5D1847AF
+P 2800 3350
+F 0 "R2" V 2880 3350 50  0000 C CNN
+F 1 "620" V 2800 3350 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 2730 3350 50  0001 C CNN
+F 3 "" H 2800 3350 50  0001 C CNN
+	1    2800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5D184809
+P 3400 4700
+F 0 "R5" V 3480 4700 50  0000 C CNN
+F 1 "16" V 3400 4700 50  0000 C CNN
+F 2 "footprints2:SQP10AJB-16R" V 3330 4700 50  0001 C CNN
+F 3 "" H 3400 4700 50  0001 C CNN
+	1    3400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5D184851
+P 2800 4350
+F 0 "R3" V 2880 4350 50  0000 C CNN
+F 1 "2.2k" V 2800 4350 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 2730 4350 50  0001 C CNN
+F 3 "" H 2800 4350 50  0001 C CNN
+	1    2800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5D18495E
+P 2500 3750
+F 0 "R1" V 2580 3750 50  0000 C CNN
+F 1 "11" V 2500 3750 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 2430 3750 50  0001 C CNN
+F 3 "" H 2500 3750 50  0001 C CNN
+	1    2500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5D184A7F
+P 2150 3950
+F 0 "C1" H 2175 4050 50  0000 L CNN
+F 1 "47u" H 2175 3850 50  0000 L CNN
+F 2 "footprints1:ECA-1HHG470" H 2188 3800 50  0001 C CNN
+F 3 "" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 5D184B53
+P 4050 3350
+F 0 "C2" H 4075 3450 50  0000 L CNN
+F 1 "2200u" H 4075 3250 50  0000 L CNN
+F 2 "footprints0:ECA-1HHG222" H 4088 3200 50  0001 C CNN
+F 3 "" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q3
+U 1 1 5D1853A0
+P 3300 3950
+F 0 "Q3" H 3500 4000 50  0000 L CNN
+F 1 "BD13916" H 3500 3900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 3500 4050 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Speaker LS1
+U 1 1 5D185691
+P 4250 4000
+F 0 "LS1" H 4300 4225 50  0000 R CNN
+F 1 "L" H 4300 4150 50  0000 R CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 4250 3800 50  0001 C CNN
+F 3 "" H 4240 3950 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_EBC Q4
+U 1 1 5D186BE7
+P 5350 3900
+F 0 "Q4" H 5550 3950 50  0000 L CNN
+F 1 "PN2222" H 5550 3850 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5550 4000 50  0001 C CNN
+F 3 "" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q5
+U 1 1 5D186BED
+P 5950 3450
+F 0 "Q5" H 6150 3500 50  0000 L CNN
+F 1 "BD13916" H 6150 3400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 6150 3550 50  0001 C CNN
+F 3 "" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5D186BF3
+P 6050 4950
+F 0 "#PWR03" H 6050 4700 50  0001 C CNN
+F 1 "GND" H 6050 4800 50  0000 C CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR04
+U 1 1 5D186BF9
+P 6050 2200
+F 0 "#PWR04" H 6050 2050 50  0001 C CNN
+F 1 "+12V" H 6050 2340 50  0000 C CNN
+F 2 "" H 6050 2200 50  0001 C CNN
+F 3 "" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5D186BFF
+P 5650 3300
+F 0 "R9" V 5730 3300 50  0000 C CNN
+F 1 "330" V 5650 3300 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 5580 3300 50  0001 C CNN
+F 3 "" H 5650 3300 50  0001 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5D186C05
+P 5450 3300
+F 0 "R7" V 5530 3300 50  0000 C CNN
+F 1 "620" V 5450 3300 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 5380 3300 50  0001 C CNN
+F 3 "" H 5450 3300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5D186C0B
+P 6050 4650
+F 0 "R10" V 6130 4650 50  0000 C CNN
+F 1 "16" V 6050 4650 50  0000 C CNN
+F 2 "footprints2:SQP10AJB-16R" V 5980 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5D186C11
+P 5450 4300
+F 0 "R8" V 5530 4300 50  0000 C CNN
+F 1 "2.2k" V 5450 4300 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 5380 4300 50  0001 C CNN
+F 3 "" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5D186C17
+P 5150 3700
+F 0 "R6" V 5230 3700 50  0000 C CNN
+F 1 "11" V 5150 3700 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 5080 3700 50  0001 C CNN
+F 3 "" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 5D186C1D
+P 4800 3900
+F 0 "C3" H 4825 4000 50  0000 L CNN
+F 1 "47u" H 4825 3800 50  0000 L CNN
+F 2 "footprints1:ECA-1HHG470" H 4838 3750 50  0001 C CNN
+F 3 "" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C4
+U 1 1 5D186C23
+P 6700 3300
+F 0 "C4" H 6725 3400 50  0000 L CNN
+F 1 "2200u" H 6725 3200 50  0000 L CNN
+F 2 "footprints0:ECA-1HHG222" H 6738 3150 50  0001 C CNN
+F 3 "" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q6
+U 1 1 5D186C3A
+P 5950 3900
+F 0 "Q6" H 6150 3950 50  0000 L CNN
+F 1 "BD13916" H 6150 3850 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-126_Vertical" H 6150 4000 50  0001 C CNN
+F 3 "" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Speaker LS2
+U 1 1 5D186C4A
+P 6900 3950
+F 0 "LS2" H 6950 4175 50  0000 R CNN
+F 1 "R" H 6950 4100 50  0000 R CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 6900 3750 50  0001 C CNN
+F 3 "" H 6890 3900 50  0001 C CNN
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5D1871CD
+P 4150 2600
+F 0 "#PWR05" H 4150 2350 50  0001 C CNN
+F 1 "GND" H 4150 2450 50  0000 C CNN
+F 2 "" H 4150 2600 50  0001 C CNN
+F 3 "" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jack-DC J2
+U 1 1 5D187A68
+P 4950 1800
+F 0 "J2" H 4950 2010 50  0000 C CNN
+F 1 "Jack-DC" H 4950 1625 50  0000 C CNN
+F 2 "PJ-037A:CUI_PJ-037A" H 5000 1760 50  0001 C CNN
+F 3 "" H 5000 1760 50  0001 C CNN
+	1    4950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5D187B90
+P 5250 2200
+F 0 "#PWR06" H 5250 1950 50  0001 C CNN
+F 1 "GND" H 5250 2050 50  0000 C CNN
+F 2 "" H 5250 2200 50  0001 C CNN
+F 3 "" H 5250 2200 50  0001 C CNN
+	1    5250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 5D34F47E
+P 6400 2350
+F 0 "R11" V 6480 2350 50  0000 C CNN
+F 1 "10k" V 6400 2350 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 6330 2350 50  0001 C CNN
+F 3 "" H 6400 2350 50  0001 C CNN
+	1    6400 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5D34F823
+P 6600 2150
+F 0 "D1" H 6600 2250 50  0000 C CNN
+F 1 "LED" H 6600 2050 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6600 2150 50  0001 C CNN
+F 3 "" H 6600 2150 50  0001 C CNN
+	1    6600 2150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Audio-Jack-3 J1
+U 1 1 5D184EF2
+P 4150 2350
+F 0 "J1" H 4100 2525 50  0000 C CNN
+F 1 "Audio-Jack-3" H 4250 2280 50  0000 C CNN
+F 2 "SJ1-3523NG:CUI_SJ1-3523NG" H 4400 2450 50  0001 C CNN
+F 3 "" H 4400 2450 50  0001 C CNN
+	1    4150 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1700 5800 1700
+Wire Wire Line
+	6600 1900 6600 2000
+Wire Wire Line
+	6600 2350 6600 2300
+Wire Wire Line
+	6550 2350 6600 2350
+Wire Wire Line
+	5250 1900 6600 1900
+Wire Wire Line
+	5250 2200 5250 1900
+Connection ~ 5800 2350
+Wire Wire Line
+	5800 1700 5800 2350
+Wire Wire Line
+	1900 2150 4050 2150
+Wire Wire Line
+	3400 4850 3400 4950
+Wire Wire Line
+	6050 4800 6050 4950
+Wire Wire Line
+	4550 2550 4550 3900
+Wire Wire Line
+	4250 2550 4550 2550
+Wire Wire Line
+	5450 4150 5450 4100
+Wire Wire Line
+	6700 4450 6700 4050
+Wire Wire Line
+	6700 3450 6700 3950
+Wire Wire Line
+	6700 3100 6700 3150
+Wire Wire Line
+	5650 3900 5750 3900
+Wire Wire Line
+	5650 3550 5650 3900
+Connection ~ 6050 4450
+Wire Wire Line
+	6050 4100 6050 4500
+Wire Wire Line
+	5450 4450 6700 4450
+Wire Wire Line
+	6050 3650 6050 3700
+Connection ~ 6050 3100
+Wire Wire Line
+	5650 3100 5650 3150
+Wire Wire Line
+	5650 3100 6700 3100
+Wire Wire Line
+	6050 2200 6050 3250
+Wire Wire Line
+	5750 3450 5650 3450
+Wire Wire Line
+	4550 3900 4650 3900
+Connection ~ 6050 2350
+Wire Wire Line
+	5450 2350 6250 2350
+Wire Wire Line
+	5450 3150 5450 2350
+Connection ~ 5450 3550
+Wire Wire Line
+	5450 3450 5450 3700
+Wire Wire Line
+	5150 3550 5650 3550
+Wire Wire Line
+	5150 3900 5150 3850
+Wire Wire Line
+	4950 3900 5150 3900
+Wire Wire Line
+	2800 4200 2800 4150
+Wire Wire Line
+	4050 4500 4050 4100
+Wire Wire Line
+	4050 3500 4050 4000
+Wire Wire Line
+	4050 3150 4050 3200
+Wire Wire Line
+	3000 3950 3100 3950
+Wire Wire Line
+	3000 3600 3000 3950
+Connection ~ 3400 4500
+Wire Wire Line
+	3400 4150 3400 4550
+Wire Wire Line
+	2800 4500 4050 4500
+Wire Wire Line
+	3400 3700 3400 3750
+Connection ~ 3400 3150
+Wire Wire Line
+	3000 3150 3000 3200
+Wire Wire Line
+	3000 3150 4050 3150
+Wire Wire Line
+	3400 2250 3400 3300
+Wire Wire Line
+	3100 3500 3000 3500
+Wire Wire Line
+	1900 3950 2000 3950
+Wire Wire Line
+	1900 2150 1900 3950
+Connection ~ 3400 2400
+Wire Wire Line
+	2800 2400 3400 2400
+Wire Wire Line
+	2800 3200 2800 2400
+Connection ~ 2800 3600
+Wire Wire Line
+	2800 3500 2800 3750
+Wire Wire Line
+	2500 3600 3000 3600
+Wire Wire Line
+	2500 3950 2500 3900
+Wire Wire Line
+	2300 3950 2500 3950
+Wire Wire Line
+	4150 2550 4150 2600
+$EndSCHEMATC
